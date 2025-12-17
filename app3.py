@@ -50,7 +50,7 @@ def perform_conversion(pdf_bytes, dpi):
 def show_image_dialog(image_bytes, page_num):
     """Displays the selected image in a large dialog box."""
     st.image(image_bytes, caption=f"Page {page_num}", use_column_width=True)
-    if st.button("Close"):
+    if st.button("Close"): 
         st.rerun()
 
 # --- Sidebar ---
